@@ -161,7 +161,14 @@ const Header = ({ cartCount, setPage, currentPage }) => {
           {navItems.map(item => (
             <button
               key={item.page}
-              onClick={() => { setPage(item.page); setIsOpen(false); }}
+              onClick={() => { 
+                setPage(item.page); 
+                setIsOpen(false);
+                window.scrollTo({
+                  top: 0,
+                  behavior: 'smooth'
+                });
+              }}
               className={`text-base font-medium transition duration-300 relative group
                 ${currentPage === item.page ? 'text-white font-bold' : TEXT_MUTED + ' hover:text-white'}`}
             >
