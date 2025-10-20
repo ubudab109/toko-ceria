@@ -92,7 +92,7 @@ export const MOCK_PRODUCTS = [
     id: 10,
     name: "Intisari Blackcurant",
     category: "Nusantara Drink",
-    price: 65000,
+    price: 75000,
     abv: "48%",
     volume: "700ml",
     description: "Arrack berkadar alkohol tinggi dari tetes tebu Jawa, sempurna untuk koktail klasik seperti Swedish Punsch.",
