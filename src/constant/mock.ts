@@ -4,7 +4,7 @@ export const MOCK_PRODUCTS = [
     id: 1,
     name: "Amerta",
     category: "Distilled Beverages",
-    price: 48000,
+    price: 55000,
     abv: "40%",
     volume: "750ml",
     description: "Distilasi murni dari beras Bali dan nira kelapa, diperam dalam tong kayu jati lokal. Halus, kompleks, dan berakar kuat dalam sejarah nusantara.",
@@ -36,7 +36,7 @@ export const MOCK_PRODUCTS = [
   {
     id: 4,
     name: "Intisari",
-    category: "Herbal Drink",
+    category: "Nusantara Drink",
     price: 55000,
     abv: "19%",
     volume: "620ml",
@@ -47,7 +47,7 @@ export const MOCK_PRODUCTS = [
   {
     id: 5,
     name: "Api",
-    category: "Herbal Drink",
+    category: "Nusantara Drink",
     price: 80000,
     abv: "48%",
     volume: "700ml",
@@ -58,7 +58,7 @@ export const MOCK_PRODUCTS = [
   {
     id: 6,
     name: "Anggur Merah Gold",
-    category: "Herbal Drink",
+    category: "Nusantara Drink",
     price: 70000,
     abv: "48%",
     volume: "700ml",
@@ -69,7 +69,7 @@ export const MOCK_PRODUCTS = [
   {
     id: 7,
     name: "Anggur Merah",
-    category: "Herbal Drink",
+    category: "Nusantara Drink",
     price: 65000,
     abv: "48%",
     volume: "700ml",
@@ -80,18 +80,7 @@ export const MOCK_PRODUCTS = [
   {
     id: 8,
     name: "Intisari Ijo",
-    category: "Herbal Drink",
-    price: 65000,
-    abv: "48%",
-    volume: "700ml",
-    description: "Arrack berkadar alkohol tinggi dari tetes tebu Jawa, sempurna untuk koktail klasik seperti Swedish Punsch.",
-    imageUrl: "./tokcer/intisari_ijo.png",
-    rating: 4.7,
-  },
-  {
-    id: 9,
-    name: "Intisari Ijo",
-    category: "Herbal Drink",
+    category: "Nusantara Drink",
     price: 65000,
     abv: "48%",
     volume: "700ml",
@@ -102,7 +91,7 @@ export const MOCK_PRODUCTS = [
   {
     id: 10,
     name: "Intisari Blackcurant",
-    category: "Herbal Drink",
+    category: "Nusantara Drink",
     price: 65000,
     abv: "48%",
     volume: "700ml",
@@ -112,8 +101,8 @@ export const MOCK_PRODUCTS = [
   },
   {
     id: 11,
-    name: "Smirnoff Ice",
-    category: "Vodka",
+    name: "Smirnoff Ice Lemon",
+    category: "Liqour",
     price: 35000,
     abv: "48%",
     volume: "700ml",
@@ -123,9 +112,9 @@ export const MOCK_PRODUCTS = [
   },
   {
     id: 12,
-    name: "Smirnoff Vodka",
-    category: "Vodka",
-    price: 35000,
+    name: "Smirnoff Vodka Original",
+    category: "Liqour",
+    price: 150000,
     abv: "48%",
     volume: "700ml",
     description: "Arrack berkadar alkohol tinggi dari tetes tebu Jawa, sempurna untuk koktail klasik seperti Swedish Punsch.",
@@ -134,8 +123,8 @@ export const MOCK_PRODUCTS = [
   },
   {
     id: 13,
-    name: "Smirnoff Ice Pink",
-    category: "Vodka",
+    name: "Smirnoff Ice Lemon",
+    category: "Liqour",
     price: 35000,
     abv: "48%",
     volume: "700ml",
@@ -143,9 +132,31 @@ export const MOCK_PRODUCTS = [
     imageUrl: "./tokcer/smirnoff_ice_pink.png",
     rating: 4.7,
   },
+  {
+    id: 14,
+    name: "Smirnoff Ice Green Apple Bite",
+    category: "Liqour",
+    price: 35000,
+    abv: "48%",
+    volume: "700ml",
+    description: "Arrack berkadar alkohol tinggi dari tetes tebu Jawa, sempurna untuk koktail klasik seperti Swedish Punsch.",
+    imageUrl: "./tokcer/smirnoff_ice_green.png",
+    rating: 4.7,
+  },
+  {
+    id: 14,
+    name: "Smirnoff Ice RapsBerry",
+    category: "Liqour",
+    price: 35000,
+    abv: "48%",
+    volume: "700ml",
+    description: "Arrack berkadar alkohol tinggi dari tetes tebu Jawa, sempurna untuk koktail klasik seperti Swedish Punsch.",
+    imageUrl: "./tokcer/smirnoff_ice_raspberry.png",
+    rating: 4.7,
+  },
 ];
 
-export const CATEGORIES = ["Semua", "Distilled Beverages", "Herbal Drink", "Vodka"];
+export const CATEGORIES = ["Semua", "Distilled Beverages", "Nusantara Drink", "Liqour"];
 
 export const PRIMARY_COLOR_ACCENT = '#AA8844';
 export const ACCENT_COLOR_CLASS = 'text-[#AA8844]';

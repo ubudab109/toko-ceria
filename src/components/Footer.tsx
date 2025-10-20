@@ -10,7 +10,7 @@ import Logo from "./Logo";
 const Footer = () => (
     <footer className={`${DARK_BG} border-t border-gray-800`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-10">
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
+            <div className="grid grid-cols-2 md:grid-cols-2 gap-8">
                 {/* Brand Info */}
                 <div>
                     <div className="mb-4">
@@ -24,7 +24,7 @@ const Footer = () => (
                 </div>
 
                 {/* Quick Links */}
-                <div>
+                {/* <div>
                     <h4 className={`text-lg font-semibold ${TEXT_LIGHT} mb-4`}>
                         Tautan Cepat
                     </h4>
@@ -42,10 +42,10 @@ const Footer = () => (
                             )
                         )}
                     </ul>
-                </div>
+                </div> */}
 
                 {/* Customer Service */}
-                <div>
+                {/* <div>
                     <h4 className={`text-lg font-semibold ${TEXT_LIGHT} mb-4`}>
                         Layanan
                     </h4>
@@ -66,20 +66,21 @@ const Footer = () => (
                             </li>
                         ))}
                     </ul>
-                </div>
+                </div> */}
 
                 {/* Contact */}
                 <div>
-                    <h4 className={`text-lg font-semibold ${TEXT_LIGHT} mb-4`}>
+                    <h4 className={`text-lg font-semibold ${TEXT_LIGHT} mb-4 text-right`}>
                         Kontak
                     </h4>
-                    <p className={`text-sm ${TEXT_MUTED}`}>
+                    <p className={`text-sm ${TEXT_MUTED} text-right`}>
                         Email: tokoceriagrup@gmail.com
                     </p>
-                    <p className={`text-sm ${TEXT_MUTED}`}>
+                    <p className={`text-sm ${TEXT_MUTED} text-right`}>
                         Telepon: +62 858-4650-1669
                     </p>
-                    <div className="mt-4 flex space-x-3">
+                    {/* <div className="mt-4 flex space-x-3"></div> */}
+                    <div className="mt-4  text-right">
                         {/* Social Icons Placeholder */}
                         {/* <a
                             href="#"

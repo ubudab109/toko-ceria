@@ -87,7 +87,7 @@ const ProductCard = ({ product, handleAddToCart }) => {
                         {product.category}
                     </span>
                     <h3
-                        className={`mt-1 text-xl font-semibold ${TEXT_LIGHT} truncate`}
+                        className={`mt-1 text-md font-semibold ${TEXT_LIGHT} truncate`}
                     >
                         {product.name}
                     </h3>
