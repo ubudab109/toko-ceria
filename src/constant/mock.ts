@@ -144,7 +144,7 @@ export const MOCK_PRODUCTS = [
     rating: 4.7,
   },
   {
-    id: 14,
+    id: 15,
     name: "Smirnoff Ice RapsBerry",
     category: "Liqour",
     price: 35000,
