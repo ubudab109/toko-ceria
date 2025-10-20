@@ -102,7 +102,7 @@ export const MOCK_PRODUCTS = [
   {
     id: 11,
     name: "Smirnoff Ice Lemon",
-    category: "Liqour",
+    category: "Liquor",
     price: 35000,
     abv: "48%",
     volume: "700ml",
@@ -113,7 +113,7 @@ export const MOCK_PRODUCTS = [
   {
     id: 12,
     name: "Smirnoff Vodka Original",
-    category: "Liqour",
+    category: "Liquor",
     price: 150000,
     abv: "48%",
     volume: "700ml",
@@ -124,7 +124,7 @@ export const MOCK_PRODUCTS = [
   {
     id: 13,
     name: "Smirnoff Ice Lemon",
-    category: "Liqour",
+    category: "Liquor",
     price: 35000,
     abv: "48%",
     volume: "700ml",
@@ -135,7 +135,7 @@ export const MOCK_PRODUCTS = [
   {
     id: 14,
     name: "Smirnoff Ice Green Apple Bite",
-    category: "Liqour",
+    category: "Liquor",
     price: 35000,
     abv: "48%",
     volume: "700ml",
@@ -146,7 +146,7 @@ export const MOCK_PRODUCTS = [
   {
     id: 15,
     name: "Smirnoff Ice RapsBerry",
-    category: "Liqour",
+    category: "Liquor",
     price: 35000,
     abv: "48%",
     volume: "700ml",
@@ -156,7 +156,7 @@ export const MOCK_PRODUCTS = [
   },
 ];
 
-export const CATEGORIES = ["Semua", "Distilled Beverages", "Nusantara Drink", "Liqour"];
+export const CATEGORIES = ["Semua", "Distilled Beverages", "Nusantara Drink", "Liquor"];
 
 export const PRIMARY_COLOR_ACCENT = '#AA8844';
 export const ACCENT_COLOR_CLASS = 'text-[#AA8844]';
