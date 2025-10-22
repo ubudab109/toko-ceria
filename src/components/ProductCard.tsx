@@ -101,15 +101,23 @@ const ProductCard = ({ product, handleAddToCart }) => {
                             </p>
                         </div>
                     </div>
-
-                    <button
-                        onClick={() => handleAddToCart(product)}
-                        className={`mt-4 w-full py-2 rounded-full text-black font-semibold bg-[#AA8844] hover:bg-opacity-90 transition duration-300 flex items-center justify-center`}
-                    >
-                        {/* Assuming ShoppingCart is imported */}
-                        {/* <ShoppingCart size={20} className="mr-2" /> */} 
-                        Tambahkan ke Keranjang
-                    </button>
+                    
+                    {
+                        product.outOfStock ? (
+                            <div className="text-white text-md">
+                                Out of stock
+                            </div>
+                        ) : (
+                        <button
+                            onClick={() => handleAddToCart(product)}
+                            className={`mt-4 w-full py-2 rounded-full text-black font-semibold bg-[#AA8844] hover:bg-opacity-90 transition duration-300 flex items-center justify-center`}
+                        >
+                            {/* Assuming ShoppingCart is imported */}
+                            {/* <ShoppingCart size={20} className="mr-2" /> */} 
+                            Tambahkan ke Keranjang
+                        </button>
+                        )
+                    }
                 </div>
             </div>
 

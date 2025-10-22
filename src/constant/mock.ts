@@ -10,6 +10,7 @@ export const MOCK_PRODUCTS = [
     description: "Distilasi murni dari beras Bali dan nira kelapa, diperam dalam tong kayu jati lokal. Halus, kompleks, dan berakar kuat dalam sejarah nusantara.",
     imageUrl: "./tokcer/amerta.png",
     rating: 4.8,
+    outOfStock: false,
   },
   {
     id: 2,
@@ -21,6 +22,7 @@ export const MOCK_PRODUCTS = [
     description: "Anggur beras manis tradisional Bali, berwarna keemasan dan difermentasi secara alami. Aroma madu, karamel, dan beras ketan manis. Sempurna sebagai hidangan penutup.",
     imageUrl: "./tokcer/baby_berry.png",
     rating: 4.5,
+    outOfStock: true,
   },
   {
     id: 3,
@@ -32,6 +34,7 @@ export const MOCK_PRODUCTS = [
     description: "Spirit jernih dan kuat yang disuling tangan dari nira palma liar di Nusa Tenggara Timur. Berani, bersahaja, dan secara tradisional diminum langsung.",
     imageUrl: "./tokcer/ananas.png",
     rating: 4.9,
+    outOfStock: true,
   },
   {
     id: 4,
@@ -43,6 +46,7 @@ export const MOCK_PRODUCTS = [
     description: "Anggur herbal fermentasi tradisional, dikenal dengan rasa manis dan aroma jamu. Klasik abadi yang populer di berbagai generasi.",
     imageUrl: "./tokcer/intisari.png",
     rating: 4.2,
+    outOfStock: false,
   },
   {
     id: 5,
@@ -54,6 +58,7 @@ export const MOCK_PRODUCTS = [
     description: "Arrack berkadar alkohol tinggi dari tetes tebu Jawa, sempurna untuk koktail klasik seperti Swedish Punsch.",
     imageUrl: "./tokcer/api.png",
     rating: 4.7,
+    outOfStock: false,
   },
   {
     id: 6,
@@ -65,6 +70,7 @@ export const MOCK_PRODUCTS = [
     description: "Arrack berkadar alkohol tinggi dari tetes tebu Jawa, sempurna untuk koktail klasik seperti Swedish Punsch.",
     imageUrl: "./tokcer/anggur_merah_gold.png",
     rating: 4.7,
+    outOfStock: false,
   },
   {
     id: 7,
@@ -76,6 +82,7 @@ export const MOCK_PRODUCTS = [
     description: "Arrack berkadar alkohol tinggi dari tetes tebu Jawa, sempurna untuk koktail klasik seperti Swedish Punsch.",
     imageUrl: "./tokcer/anggur_merah.png",
     rating: 4.7,
+    outOfStock: false,
   },
   {
     id: 8,
@@ -87,6 +94,7 @@ export const MOCK_PRODUCTS = [
     description: "Arrack berkadar alkohol tinggi dari tetes tebu Jawa, sempurna untuk koktail klasik seperti Swedish Punsch.",
     imageUrl: "./tokcer/intisari_ijo.png",
     rating: 4.7,
+    outOfStock: false,
   },
   {
     id: 10,
@@ -98,6 +106,7 @@ export const MOCK_PRODUCTS = [
     description: "Arrack berkadar alkohol tinggi dari tetes tebu Jawa, sempurna untuk koktail klasik seperti Swedish Punsch.",
     imageUrl: "./tokcer/intisari_blackcurant.png",
     rating: 4.7,
+    outOfStock: false,
   },
   {
     id: 11,
@@ -109,6 +118,7 @@ export const MOCK_PRODUCTS = [
     description: "Arrack berkadar alkohol tinggi dari tetes tebu Jawa, sempurna untuk koktail klasik seperti Swedish Punsch.",
     imageUrl: "./tokcer/smirnoff_ice.png",
     rating: 4.7,
+    outOfStock: false,
   },
   {
     id: 12,
@@ -120,6 +130,7 @@ export const MOCK_PRODUCTS = [
     description: "Arrack berkadar alkohol tinggi dari tetes tebu Jawa, sempurna untuk koktail klasik seperti Swedish Punsch.",
     imageUrl: "./tokcer/smirnoff_vodka.png",
     rating: 4.7,
+    outOfStock: false,
   },
   {
     id: 13,
@@ -131,6 +142,7 @@ export const MOCK_PRODUCTS = [
     description: "Arrack berkadar alkohol tinggi dari tetes tebu Jawa, sempurna untuk koktail klasik seperti Swedish Punsch.",
     imageUrl: "./tokcer/smirnoff_ice_pink.png",
     rating: 4.7,
+    outOfStock: false,
   },
   {
     id: 14,
@@ -142,6 +154,7 @@ export const MOCK_PRODUCTS = [
     description: "Arrack berkadar alkohol tinggi dari tetes tebu Jawa, sempurna untuk koktail klasik seperti Swedish Punsch.",
     imageUrl: "./tokcer/smirnoff_ice_green.png",
     rating: 4.7,
+    outOfStock: false,
   },
   {
     id: 15,
@@ -153,6 +166,7 @@ export const MOCK_PRODUCTS = [
     description: "Arrack berkadar alkohol tinggi dari tetes tebu Jawa, sempurna untuk koktail klasik seperti Swedish Punsch.",
     imageUrl: "./tokcer/smirnoff_ice_raspberry.png",
     rating: 4.7,
+    outOfStock: false,
   },
 ];
 
