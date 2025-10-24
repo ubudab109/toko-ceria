@@ -101,7 +101,7 @@ const ProductCard = ({ product, handleAddToCart }) => {
                     </h3>
                     {product.limitedStock && (
                         <span className="text-gray-400 text-sm" style={{ fontStyle: 'italic' }}>
-                            *Stock Terbatas
+                            *Stok Terbatas
                         </span>
                     )}
                     <div className="flex justify-between items-center mt-3">
