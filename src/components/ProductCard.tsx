@@ -1,5 +1,10 @@
 import React, { useState } from "react";
-import { ACCENT_COLOR_CLASS, DARK_BG, TEXT_LIGHT, TEXT_MUTED } from "../constant/mock";
+import {
+    ACCENT_COLOR_CLASS,
+    DARK_BG,
+    TEXT_LIGHT,
+    TEXT_MUTED,
+} from "../constant/mock";
 // Assuming you have these constants and the ShoppingCart icon imported
 // const DARK_BG = "bg-[#121212]";
 // const TEXT_LIGHT = "text-white";
@@ -11,12 +16,12 @@ import { ACCENT_COLOR_CLASS, DARK_BG, TEXT_LIGHT, TEXT_MUTED } from "../constant
 const ImageModal = ({ imageUrl, altText, onClose }) => {
     return (
         // Modal overlay
-        <div 
+        <div
             className="fixed inset-0 z-50 flex items-center justify-center bg-black bg-opacity-75 p-4"
             onClick={onClose} // Close when clicking the overlay
         >
             {/* Modal content */}
-            <div 
+            <div
                 className="relative max-w-4xl max-h-[90vh] bg-[#1C1C1C] rounded-xl shadow-2xl p-6"
                 onClick={(e) => e.stopPropagation()} // Prevent closing when clicking the image/content area
             >
@@ -28,7 +33,7 @@ const ImageModal = ({ imageUrl, altText, onClose }) => {
                 >
                     &times;
                 </button>
-                
+
                 {/* Image */}
                 <img
                     src={imageUrl}
@@ -63,7 +68,7 @@ const ProductCard = ({ product, handleAddToCart }) => {
                 onMouseLeave={() => setIsHovered(false)}
             >
                 {/* Product Image */}
-                <div 
+                <div
                     className="h-72 flex items-center justify-center p-4 cursor-pointer"
                     onClick={handleImageClick} // Added click handler here
                 >
@@ -83,15 +88,22 @@ const ProductCard = ({ product, handleAddToCart }) => {
 
                 {/* Product Details (rest of your card content) */}
                 <div className="p-5">
-                    <span className={`text-xs uppercase font-medium ${TEXT_MUTED}`}>
+                    <span
+                        className={`text-xs uppercase font-medium ${TEXT_MUTED}`}
+                    >
                         {product.category}
                     </span>
                     <h3
                         className={`mt-1 text-md font-semibold ${TEXT_LIGHT} truncate`}
                     >
-                        {product.name}
-                    </h3>
 
+                    {product.name}
+                    </h3>
+                    {product.limitedStock && (
+                        <span className="text-gray-400 text-sm" style={{ fontStyle: 'italic' }}>
+                            *Stock Terbatas
+                        </span>
+                    )}
                     <div className="flex justify-between items-center mt-3">
                         <div className="flex flex-col">
                             <p
@@ -101,23 +113,19 @@ const ProductCard = ({ product, handleAddToCart }) => {
                             </p>
                         </div>
                     </div>
-                    
-                    {
-                        product.outOfStock ? (
-                            <div className="text-white text-md">
-                                Out of stock
-                            </div>
-                        ) : (
+
+                    {product.outOfStock ? (
+                        <div className="text-white text-md">Stok Habis</div>
+                    ) : (
                         <button
                             onClick={() => handleAddToCart(product)}
                             className={`mt-4 w-full py-2 rounded-full text-black font-semibold bg-[#AA8844] hover:bg-opacity-90 transition duration-300 flex items-center justify-center`}
                         >
                             {/* Assuming ShoppingCart is imported */}
-                            {/* <ShoppingCart size={20} className="mr-2" /> */} 
+                            {/* <ShoppingCart size={20} className="mr-2" /> */}
                             Tambahkan ke Keranjang
                         </button>
-                        )
-                    }
+                    )}
                 </div>
             </div>
 
