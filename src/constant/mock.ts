@@ -10,7 +10,7 @@ export const MOCK_PRODUCTS = [
     description: "Distilasi murni dari beras Bali dan nira kelapa, diperam dalam tong kayu jati lokal. Halus, kompleks, dan berakar kuat dalam sejarah nusantara.",
     imageUrl: "./tokcer/amerta.png",
     rating: 4.8,
-    outOfStock: false,
+    outOfStock: true,
     limitedStock: false,
   },
   {
