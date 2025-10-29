@@ -23,7 +23,7 @@ export const MOCK_PRODUCTS = [
     description: "Anggur beras manis tradisional Bali, berwarna keemasan dan difermentasi secara alami. Aroma madu, karamel, dan beras ketan manis. Sempurna sebagai hidangan penutup.",
     imageUrl: "./tokcer/baby_berry.png",
     rating: 4.5,
-    outOfStock: false,
+    outOfStock: true,
     limitedStock: true,
   },
   {
@@ -36,7 +36,7 @@ export const MOCK_PRODUCTS = [
     description: "Spirit jernih dan kuat yang disuling tangan dari nira palma liar di Nusa Tenggara Timur. Berani, bersahaja, dan secara tradisional diminum langsung.",
     imageUrl: "./tokcer/ananas.png",
     rating: 4.9,
-    outOfStock: false,
+    outOfStock: true,
     limitedStock: true,
   },
   {
