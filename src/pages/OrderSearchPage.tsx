@@ -9,7 +9,7 @@ const OrderSearchPage = () => {
 
     return (
         <div className="p-8">
-            <div className={`${BROWN_DARK_BG} p-6 rounded-xl shadow-2xl border-gray-800 text-white max-w-1/2 mx-auto`}>
+            <div  className={`w-full sm:max-w-md md:max-w-lg lg:max-w-xl ${BROWN_DARK_BG} p-6 rounded-xl shadow-2xl border border-gray-800 text-white mx-auto`}>
 
                 {/* --- Header: Error Message --- */}
                 <div className="flex flex-col items-center text-center mb-6 pt-2">

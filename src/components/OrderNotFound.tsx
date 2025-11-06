@@ -5,7 +5,7 @@ import { ACCENT_COLOR_CLASS, BROWN_DARK_BG } from '../constant/mock';
 const OrderNotFound = () => {
     return (
         <div className="p-8">
-            <div className={`${BROWN_DARK_BG} p-6 rounded-xl shadow-2xl border-gray-800 text-white max-w-1/2 mx-auto`}>
+            <div className={`w-full sm:max-w-md md:max-w-lg lg:max-w-xl ${BROWN_DARK_BG} p-6 rounded-xl shadow-2xl border border-gray-800 text-white mx-auto`}>
 
                 {/* --- Header: Error Message --- */}
                 <div className="flex flex-col items-center text-center mb-6 pt-2">
@@ -41,9 +41,10 @@ const OrderNotFound = () => {
 
                 {/* --- Primary Action Button (Retry or Back) --- */}
                 <div
-                    className="mt-8 w-full py-4 text-lg font-bold bg-red-600 hover:bg-red-700 rounded-full transition duration-300 flex items-center justify-center shadow-lg"
+                    className="mt-8 w-full py-3 sm:py-4 text-base sm:text-lg font-bold bg-red-600 hover:bg-red-700 rounded-full transition duration-300 flex flex-wrap items-center justify-center gap-2 text-center shadow-lg"
                 >
-                    <AlertTriangle className="mr-2 w-5 h-5" /> Cek Nomor Pesanan Kembali
+                    <AlertTriangle className="w-5 h-5 flex-shrink-0" />
+                    <span className="leading-tight">Cek Nomor Pesanan Kembali</span>
                 </div>
 
             </div>
