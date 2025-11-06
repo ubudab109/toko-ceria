@@ -80,7 +80,7 @@ const Footer = () => (
                         Telepon: +62 858-4650-1669
                     </p>
                     {/* <div className="mt-4 flex space-x-3"></div> */}
-                    <div className="mt-4  text-right">
+                    <div className="mt-4 space-x-2 text-right">
                         {/* Social Icons Placeholder */}
                         {/* <a
                             href="#"
@@ -95,6 +95,15 @@ const Footer = () => (
                             className={`${ACCENT_COLOR_CLASS} hover:text-white transition duration-200`}
                         >
                             Instagram
+                        </a>
+
+                        <a
+                            href="http://www.tiktok.com/@tokcer.co.id"
+                            target="_blank"
+                            rel="noreferer"
+                            className={`${ACCENT_COLOR_CLASS} hover:text-white transition duration-200`}
+                        >
+                            TikTok
                         </a>
                         {/* <a
                             href="#"

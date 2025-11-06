@@ -191,4 +191,5 @@ export const ACCENT_COLOR_CLASS = 'text-[#AA8844]';
 export const DARK_BG = 'bg-[#121212]';
 export const TEXT_LIGHT = 'text-gray-200';
 export const TEXT_MUTED = 'text-gray-400';
-export const LOGO_URL = "./logo/logo.png";
+export const LOGO_URL = "/./logo/logo.png";
+export const BROWN_DARK_BG = 'bg-[#1C1C1C]';

@@ -1,2 +1,75 @@
+/* src/index.css (or your main CSS file) */
+
 @import "tailwindcss";
-@tailwind utilities;
+
+@theme {
+    /* ... your theme colors ... */
+    --color-primary-accent: #AA8844;
+    --color-dark-bg: #121212;
+    --color-brown-dark-bg: #1C1C1C;
+    --color-text-light: #e5e5e5;
+    /* approx. gray-200 */
+    --color-text-muted: #a3a3a3;
+    /* approx. gray-400 */
+}
+
+/* 🛑 REMOVE THIS LINE: @tailwind utilities; 
+   In v4, only @import "tailwindcss" is needed. 
+*/
+
+/* --- Custom Animation and Component Code --- */
+
+/* Add the 'cheers' animation keyframes here as standard CSS */
+@keyframes cheersLeft {
+
+    0%,
+    100% {
+        transform: translateX(-10px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(0px) rotate(-10deg);
+    }
+}
+
+@keyframes cheersRight {
+
+    0%,
+    100% {
+        transform: translateX(10px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateX(0px) rotate(10deg);
+    }
+}
+
+/* ✅ FIX: Define the animation as a standard CSS class (prefixed with 'animate-') 
+   This directly corresponds to the class names used in your JSX.
+*/
+.animate-cheer-left {
+    animation: cheersLeft 2s ease-in-out infinite;
+}
+
+.animate-cheer-right {
+    animation: cheersRight 2s ease-in-out infinite;
+}
+
+.custom-scrollbar::-webkit-scrollbar {
+    height: 8px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: var(--color-dark-bg);
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: var(--color-primary-accent);
+    border-radius: 10px;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #C29E65;
+    /* A slightly lighter accent */
+}

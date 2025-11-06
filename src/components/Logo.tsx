@@ -22,12 +22,11 @@ const Logo = ({ size = "text-md", isButton = false }) => {
 
     if (isButton) {
         return (
-            <a
-                href="/"
+            <div
                 className={`hover:text-white transition duration-300 ${logoClasses}`}
             >
                 {logoContent}
-            </a>
+            </div>
         );
     }
 
