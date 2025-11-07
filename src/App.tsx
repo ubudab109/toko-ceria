@@ -23,6 +23,7 @@ import OrderNotFoundPage from './pages/OrderNotFoundPage';
 import OrderSearchPage from './pages/OrderSearchPage';
 import ProductDetailPage from './pages/ProductDetailPage';
 import ScrollToTop from './components/ScrollToTop';
+import AgeVerificationModal from './components/AgeVerificationModal';
 
 /**
  * Main Application Component (Handles Routing)
@@ -35,10 +36,45 @@ export default function App() {
   const [products, setProducts] = useState<ProductI[]>([]);
   const [categories, setCategories] = useState<string[]>([]);
   const [loading, setLoading] = useState(true);
+  const [showAgeConfirmation, setShowAgeConfirmation] = useState<boolean>(false);
+
+  // --- AGE CONFIRMATION HANDLER ---
+  const handleAgeConfirmation = (confirmed: boolean) => {
+    if (confirmed) {
+      // Set localStorage to prevent modal from showing again
+      localStorage.setItem('ageConfirmed', 'true');
+      setShowNotification(true);
+      setNotificationMessage("Terimakasih atas konfirmasi Anda. Silahkan menjelajahi produk kami");
+      setTimeout(() => {
+        setShowNotification(false)
+      },2000);
+    } else {
+      // Optional: If they refuse, you could redirect them or show a persistent message.
+      // For now, we simply close the modal and they can continue, but this is the place 
+      // to implement stricter age gates if needed.
+      setNotificationMessage("Anda mungkin tidak dapat mengakses semua konten.");
+      setShowNotification(true);
+      setTimeout(() => {
+        setShowNotification(false)
+        window.location.replace("https://www.google.com"); 
+      },
+      2000);
+    }
+    // Always hide the modal after user interaction
+    setShowAgeConfirmation(false);
+  };
 
   useEffect(() => {
     window.scrollTo(0, 0);
-  }, [])
+
+    // Check Local Storage for age confirmation status
+    const isAgeConfirmed = localStorage.getItem('ageConfirmed');
+    if (isAgeConfirmed !== 'true') {
+      setShowAgeConfirmation(true);
+    }
+  }, []);
+
+
   // --- Cart Handlers ---
   const handleAddToCart = (product: ProductI) => {
     if (!product) return;
@@ -114,6 +150,10 @@ export default function App() {
   }
   return (
     <div className={`min-h-screen ${DARK_BG} font-inter`}>
+      <AgeVerificationModal
+        isVisible={showAgeConfirmation}
+        onClose={handleAgeConfirmation}
+      />
       {/* Notification Toast */}
       {showNotification && (
         <div className={`fixed top-30 right-4 z-50 p-4 bg-gray-900 border border-[#AA8844] text-white rounded-lg shadow-xl transition-opacity duration-300 opacity-100 animate-fadeInOut`}>
